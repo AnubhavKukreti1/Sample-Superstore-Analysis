@@ -1,71 +1,72 @@
-🛒 Superstore Sales Analysis
+# 🛒 Superstore Sales Analysis
 
-This project is an exploratory data analysis of a Superstore sales dataset using Python.
+An exploratory data analysis (EDA) of a Superstore sales dataset using Python — going beyond charts to answer real business questions about sales, profit, customers, regions, shipping, and discounts.
 
-I worked with the data to understand how the business is performing in terms of sales and profit, and to find patterns across products, customers, regions, shipping methods, discounts, and time.
+## 👤 Author
 
-The main focus of this project is not just creating charts, but using the data to answer simple business questions and find useful insights.
+**Anubhav Kukreti**
+BCA (AI & DS) student at Graphic Era Deemed University
 
-📂 Dataset
+- GitHub: [@AnubhavKukreti1](https://github.com/AnubhavKukreti1)
 
-The dataset contains 8,399 rows and 21 columns.
+## 📌 Project Overview
 
-Some of the main columns include:
+This project works through a complete EDA workflow on Superstore sales data — from cleaning and structuring the raw data to calculating key business metrics and turning the results into actionable insights. The goal isn't just visualization; it's using the data to answer practical business questions such as which regions perform best, how discounts affect profitability, and which customers and products drive the most value.
 
-Order ID and Order Date
-Order Quantity
-Sales and Profit
-Discount
-Ship Mode
-Customer Name and Customer Segment
-Province and Region
-Product Category and Sub-Category
-Product Name
-Shipping Cost
-Product Base Margin
-Ship Date
+## 📂 Dataset
 
-The dataset gives information about orders, customers, products, sales, shipping, and profitability.
+The dataset contains **8,399 rows** and **21 columns**, covering orders, customers, products, sales, shipping, and profitability.
 
-🛠️ Tools Used
-Python
-NumPy
-Pandas
-Matplotlib
-Seaborn
-Jupyter Notebook
-🔍 What I Analyzed
+Key columns include:
 
-In this project, I explored the data in several areas:
+| Category | Columns |
+|---|---|
+| Order Info | Order ID, Order Date, Order Quantity |
+| Financials | Sales, Profit, Discount, Shipping Cost, Product Base Margin |
+| Shipping | Ship Mode, Ship Date |
+| Customer | Customer Name, Customer Segment |
+| Location | Province, Region |
+| Product | Product Category, Sub-Category, Product Name |
 
-Checked the structure and data types of the dataset
-Handled date columns and missing values
-Calculated overall sales, profit, profit margin, orders, and units sold
-Analyzed sales and profit over time
-Compared product categories and sub-categories
-Looked at regional performance
-Identified top-performing products
-Analyzed customer segments
-Studied the relationship between discounts and profit
-Examined shipping methods and shipping costs
-Used correlation analysis to understand relationships between numerical variables
-Created different visualizations to communicate the findings
-📊 Visualizations
+## 🛠️ Tools Used
 
-I used Matplotlib and Seaborn to create different types of charts, including:
+- Python
+- NumPy
+- Pandas
+- Matplotlib
+- Seaborn
+- Jupyter Notebook
 
-Bar charts
-Line charts
-Histograms
-Box plots
-Scatter plots
-Heatmaps
-Distribution plots
-Pie charts
+## 🔍 Analysis Workflow
 
-These visualizations helped me compare categories, identify trends, and understand the relationships between different variables.
+- Inspected data structure, types, and handled missing values / date columns
+- Calculated overall sales, profit, profit margin, order count, and units sold
+- Analyzed sales and profit trends over time
+- Compared performance across product categories and sub-categories
+- Evaluated regional and provincial performance
+- Identified top-performing products and customers
+- Analyzed performance by customer segment
+- Studied the relationship between discounts and profit
+- Examined shipping methods against shipping cost and speed
+- Ran correlation analysis across numerical variables
+- Built visualizations to communicate findings clearly
 
-📁 Project Structure
+## 📊 Visualizations
+
+Built with Matplotlib and Seaborn, including:
+
+- Bar charts
+- Line charts
+- Histograms
+- Box plots
+- Scatter plots
+- Heatmaps
+- Distribution plots
+- Pie charts
+
+## 📁 Project Structure
+
+```
 Superstore-Sales-Analysis/
 │
 ├── data/
@@ -73,75 +74,52 @@ Superstore-Sales-Analysis/
 │
 ├── notebooks/
 │   └── ecommerce_analysis.ipynb
-│── visualizations/
+│
+├── visualizations/
 ├── README.md
 ├── requirements.txt
 └── .gitignore
+```
 
-🚀 How to Run the Project
-1. Clone the repository
-git clone <https://github.com/AnubhavKukreti1/Sample-Superstore-Analysis.git>
-cd Superstore-Sales-Analysis
+> **Note:** Make sure this structure matches your actual repo layout before pushing to GitHub — if your CSV and notebook currently live elsewhere, move/rename them to match, or update the paths above.
 
-2. Install the required libraries
-pip install -r requirements.txt
+## 🚀 How to Run
 
-3. Start Jupyter Notebook
-jupyter notebook
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/AnubhavKukreti1/Sample-Superstore-Analysis.git
+   cd Superstore-Sales-Analysis
+   ```
 
+2. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Then open:
+3. **Launch Jupyter Notebook**
+   ```bash
+   jupyter notebook
+   ```
 
-notebooks/ecommerce_analysis.ipynb
+4. **Open and run**
+   Open `notebooks/ecommerce_analysis.ipynb` and run all cells top to bottom to reproduce the analysis.
 
-4. Run the notebook
+## 💡 Key Findings
 
-Run the cells from top to bottom to reproduce the analysis.
+> ⚠️ **To be filled in with real numbers from the notebook.** Replace each bullet below with the specific figure your analysis produces — this is what makes the project credible to a recruiter. Examples of the *format* to aim for:
+> - "The West region generated the highest sales at $X, while the Central region had the lowest profit margin at X%."
+> - "Profit margin drops from X% to Y% once discounts exceed Z%, based on the discount-vs-profit scatter plot."
 
-💡 Key Findings
+Planned findings to confirm and quantify:
 
-Some of the main findings from my analysis include:
+- [ ] Relationship between sales and profit (do high-sales products always mean high profit?)
+- [ ] Effect of discount level on profitability
+- [ ] Category / sub-category performance differences
+- [ ] Regional differences in sales and profit
+- [ ] Seasonal or monthly sales trends
+- [ ] Share of revenue from top customers (e.g., Pareto/80-20 pattern)
+- [ ] Shipping method trade-offs (cost vs. speed)
 
-Sales and profit are not always directly related. Some products generate high sales but relatively low profit.
-Higher discounts can have a negative effect on profitability.
-Product performance varies considerably between categories and sub-categories.
-Sales and profit are different across regions, showing that geographic performance is not uniform.
-Sales change over time, with some months performing better than others.
-A relatively small group of customers contributes a significant amount of overall sales.
-Shipping methods involve a trade-off between shipping speed and shipping cost.
+## 🎯 What I Learned
 
-The exact numbers and visual evidence for these findings are available in the notebook.
-
-🎯 What I Learned
-
-Through this project, I practiced using Python for a complete exploratory data analysis workflow — from loading and cleaning a dataset to calculating KPIs, creating visualizations, and turning the results into business insights.
-
-I also learned how important it is to look at both sales and profit when evaluating business performance. High sales do not necessarily mean high profitability.
-
-🔮 Possible Next Steps
-
-If I continue developing this project, I would like to:
-
-Add RFM analysis for customer segmentation
-Build a sales forecasting model
-Create an interactive dashboard using Power BI or Tableau
-Add more detailed product-level profitability analysis
-Automate the data cleaning and analysis process
-
-This version feels more like **a person documenting their own project** rather than a generic project description.
-
-### One thing I'd change as you continue
-
-Don't write findings like:
-
-> "Profit margin declines sharply once discounts exceed roughly 20–30%."
-
-unless your notebook actually demonstrates that with a chart/calculation.
-
-Since you're still doing the analysis, it's better to let the **data determine your final findings**. Once we've finished your analysis, we can replace the "Key Findings" section with specific numbers such as:
-
-> "The West region generated the highest sales at $X, while the Central region had the lowest profit margin at X%."
-
-That will make the GitHub project much stronger because a recruiter can see **specific evidence rather than generic claims**.
-
-Also, your project structure in the README should match your **actual folders**. If your CSV and notebook are currently in different locations, we'll set that up cleanly before you push it to GitHub.
+Through this project, I practiced a full exploratory data analysis workflow in Python — loading and cleaning data, calculating KPIs, building visualizations, and translating results into business insights. A key takeaway: high sales don't automatically mean high profitability, which is why looking at both metrics together matters when evaluating business performance.
